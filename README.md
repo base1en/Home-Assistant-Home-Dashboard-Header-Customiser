@@ -58,7 +58,7 @@ and no interference with Home Assistant's existing header action items.
 
 ## Tested on
 
-* Home Assistant Core 2026.9.3, Frontend 20260826.7
+* Home Assistant Core 2026.9.2>2026.9.4, Frontend 20260826.7 (Core version range will change on a monthly basis as new versions are released, Frontend version as it's changed)
 * Because it targets internal frontend structure it is version-sensitive; see
 [Upgrade risk](#upgrade-risk-and-architectural-trade-offs).
 
