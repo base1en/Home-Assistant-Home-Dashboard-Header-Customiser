@@ -65,8 +65,8 @@ and no interference with Home Assistant's existing header action items.
 ## Known cosmetic issue
 
 On HA reload or system boot the old view (Overview text, no icons) may remain until 
-this user script is injected. Wait until HA has finished loading, then either refresh
-the page or switch to another view and return.
+this user script is injected. If this happens and it doesn't resolve itself, wait until HA has finished loading, then either refresh
+the page or switch to another view and then return to the overview page.
 
 Ctrl+F5/Ctrl+Shift+R will not fix this issue while HA is still loading.
 
