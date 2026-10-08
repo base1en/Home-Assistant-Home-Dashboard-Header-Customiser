@@ -5,10 +5,10 @@
 
 # Home Assistant Home Dashboard Header Customiser
 
-Want a **Home Assistant custom header** with **shortcut buttons** to **rename the Overview dashboard**? Home Assistant 2026.2+ auto-generates the built-in Home dashboard with a fixed "Overview" title and very limited customisation/customization options. This module restores control of the header by renaming it to "Home" and adding inline shortcut buttons for your most-used dashboards.
+Want a **Home Assistant custom header** with **shortcut buttons** to **rename the Overview dashboard**? This module restores some control of the header by renaming it to "Home" and adding the ability to place inline shortcut buttons to your most-used dashboards.
 
 **Why it exists:**
-The built-in default landing page dashboard is auto-generated and has no header customisation/customization. This module provides a small but useful workaround for users who want a cleaner, more functional landing page.
+The built-in default landing page dashboard is automatically generated and has no header customisation/customization options. This module provides a small but useful workaround for users who want a cleaner, more functional landing page.
 
 **Not an official Home Assistant feature.**
 This project uses internal Home Assistant frontend DOM and shadow-root structures. It is not a supported Home Assistant API and may require updates after frontend changes – see
@@ -26,14 +26,14 @@ future update from HA breaks it.
 
 ## Tested on
 
-* Home Assistant Core 2026.9.2>2026.9.4, Frontend 20260826.7 (Core version range will change on a monthly basis as new versions are released, Frontend version as it's changed)
+* Home Assistant Core 2026.9.2>2026.10.0, Frontend 20260826.7 (Core version range will change as new versions are released, likewise for the Frontend version)
 * Because it targets internal frontend structure it is version-sensitive; see
 [Upgrade risk](#upgrade-risk-and-architectural-trade-offs).
 
 ## Known cosmetic issue
 
 On HA reload or system boot the old view (Overview text, no icons) may remain until 
-this user script is injected. If this happens and it doesn't resolve itself, wait until HA has finished loading, then either refresh
+this module is injected. If this happens and it doesn't resolve itself, wait until HA has finished loading, then either refresh
 the page or switch to another view and then return to the overview page.
 
 Ctrl+F5/Ctrl+Shift+R will not fix this issue while HA is still loading.
@@ -75,14 +75,14 @@ and no interference with Home Assistant's existing header action items.
 
 ## Installation
 
-1. Copy `home-dashboard-header.js` into your Home Assistant configuration's
-`www` folder: `<config>/www/home-dashboard-header.js`.
+1. Copy `overview-title.js` into your Home Assistant configuration's
+`www` folder: `<config>/www/overview-title.js`.
 2. Load it app-wide via `frontend.extra_module_url` in `configuration.yaml`:
 
 ```yaml
    frontend:
      extra_module_url:
-       - /local/home-dashboard-header.js
+       - /local/overview-title.js
    ```
 
 3. **Restart Home Assistant.** A restart is required because you are changing
@@ -97,7 +97,7 @@ to its right.
 
 ## Configuring shortcuts
 
-Open `home-dashboard-header.js` and edit the **`SHORTCUTS`** block near the
+Open `overview-title.js` and edit the **`SHORTCUTS`** block near the
 top – it is the only section you should normally need to change:
 
 ```js
@@ -144,7 +144,7 @@ same component for icon rendering.
 ## Localisation
 
 The module displays "Home" as the dashboard title. To change this to another
-language, edit line 149 in `home-dashboard-header.js`:
+language, edit line 149 in `overview-title.js`:
 
 Doublecheck that line 149 reads:
 ```js
@@ -257,10 +257,10 @@ updating.
 1. Hard-refresh the browser on `/home` (Ctrl+F5 / Ctrl+Shift+R).
 2. If the title or shortcuts are gone, open the browser developer console:
 
-   * **No `[home-dashboard-header] module loaded`** – the script
+   * **No `[overview-title.js] module loaded`** – the script
 itself is not loading. Check `extra_module_url`. To bust the browser cache
 while keeping the same file path, change the URL to
-`/local/home-dashboard-header.js?cache=2` – that change does require a
+`/local/overview-title.js?cache=2` – that change does require a
 restart.
    * **`toolbar not found`** or **`hui-root not found after 20 tries`** –
 Home Assistant changed its internal structure; the `pierce` chain or
@@ -300,14 +300,14 @@ affiliated with, or endorsed by Home Assistant.
 
 ## Works on my installation
 
-This user script works on the author's Home Assistant installation and is tested
+This module works on the author's Home Assistant installation and is tested
 against the version stated above. There is no guarantee it will work on other
 installations or future Home Assistant releases. If it doesn't quite fit your
 setup, feel free to modify and adapt it under the terms of the MIT licence.
 
 ## Files
 
-* `home-dashboard-header.js` – the module (self-contained, no dependencies)
+* `overview-title.js` – the module (self-contained, no dependencies)
 * `README.md` – this file
 * `CHANGELOG.md` – change log
 * `screenshot-home-dashboard.png` – screenshot of header
