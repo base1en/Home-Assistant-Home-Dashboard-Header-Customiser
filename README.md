@@ -1,8 +1,21 @@
-# Home Assistant Home Dashboard Header
+# Home Assistant Home Dashboard Header Customiser
 
-Overrides the header of Home Assistant's built-in Home Dashboard (the panel
-historically titled "Overview") so it reads **"Home"**, and adds inline shortcut icon
-buttons to the header, immediately to the right of the title.
+Home Assistant 2026.9+ auto-generates the overview page with limited customisation 
+options. This module lets you reclaim control of the header.
+
+**What it does:**
+- Changes the dashboard title from "Overview" to "Home"
+- Adds inline icon shortcuts for quick access to your most-used dashboards
+- Works without integrations, custom cards, or YAML configuration
+
+**Why you want it:** Lost the ability to customize your home page header in 2026.9+? 
+This restores it — whether you prefer to customise or customize your setup.
+**Features:**
+- Rename "Overview" to "Home" 
+- Add configurable icon shortcuts (cameras, smart plugs, etc.)
+- Works with HA 2026.9+ (tested on 2026.9.2–2026.9.4)
+- No integrations, custom cards, or YAML configuration required
+- Scoped only to the home dashboard — other dashboards unaffected
 
 ![Home Assistant Home Dashboard with custom header and shortcut icons](screenshot-home-dashboard.png)
 
