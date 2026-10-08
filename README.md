@@ -5,7 +5,7 @@
 
 # Home Assistant Home Dashboard Header Customiser
 
-Want a **Home Assistant custom header** with **shortcut buttons** to **rename the Overview dashboard**? This module restores some control of the header by renaming it to "Home" and adding the ability to place inline shortcut buttons to your most-used dashboards.
+This module restores some control of the default landing page (Overview) header by renaming it to "Home" and adding the ability to place inline shortcut buttons to your most-used dashboards.
 
 **Why it exists:**
 The built-in default landing page dashboard is automatically generated and has no header customisation/customization options. This module provides a small but useful workaround for users who want a cleaner, more functional landing page.
