@@ -1,7 +1,7 @@
 /*
  * home-dashboard-header.js
  *
- * https://github.com/base1en/ha-overview-page-tweak
+ * https://github.com/base1en/Home-Assistant-Home-Dashboard-Header-Customiser
  *
  * Copyright (c) 2026 Paul James
  *
