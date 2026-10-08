@@ -1,5 +1,5 @@
 # Changelog
-## [beta] - 08/10/2026
+## [beta] - 2026-10-08
 
  - rename home-dashboard-header.js → overview_title.js
  - update README installation example
