@@ -10,7 +10,7 @@
  * in that header, immediately to the right of the title.
  *
  * Loaded via frontend.extra_module_url (see README.md).
- * Tested on Home Assistant Core 2026.9.2 / Frontend 20260826.7.
+ * Tested on Home Assistant Core 2026.9.2>2026.9.4 / Frontend 20260826.7.
  *
  * WARNING: this module relies on internal Home Assistant frontend DOM and
  * shadow-root structure. It is NOT an official or supported Home Assistant
