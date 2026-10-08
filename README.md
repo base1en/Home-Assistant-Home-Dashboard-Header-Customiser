@@ -76,7 +76,7 @@ and no interference with Home Assistant's existing header action items.
 ## Installation
 
 1. Copy `overview-title.js` into your Home Assistant configuration's
-`www` folder: `<config>/www/overview-title.js`.
+`www` folder: `config/www/overview-title.js`.
 2. Load it app-wide via `frontend.extra_module_url` in `configuration.yaml`:
 
 ```yaml
