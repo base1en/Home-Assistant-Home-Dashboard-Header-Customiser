@@ -1,8 +1,15 @@
 # Changelog
+## [beta] - 08/10/2026
+
+ - rename home-dashboard-header.js → overview_title.js
+ - update README installation example
+ - update README localisation reference
+ - update source/header references if necessary
+ - update any other documentation mentioning the old filename
 
 ## [beta] - 2026-09-19
 
-Initial standalone release of the working Home Dashboard header module.
+Initial standalone release of the working JS module.
 
 ### Added
 
@@ -26,6 +33,6 @@ Initial standalone release of the working Home Dashboard header module.
 
 ### Tested
 
-- Home Assistant Core 2026.9.3, Frontend 20260826.7. 
+- Home Assistant Core 2026.9.2>2026.10.0, Frontend 20260826.7. 
 - Not guaranteed to survive future Home Assistant frontend restructuring —
   see README, "Upgrade risk and architectural trade-offs".
