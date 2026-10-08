@@ -1,28 +1,27 @@
-# Home Assistant Home Dashboard Header Customiser
-
-Home Assistant 2026.9+ auto-generates the overview page with limited customisation 
-options. This module lets you reclaim control of the header.
-
-**What it does:**
-- Changes the dashboard title from "Overview" to "Home"
-- Adds inline icon shortcuts for quick access to your most-used dashboards
-- Works without integrations, custom cards, or YAML configuration
-
-**Why you want it:** Lost the ability to customize your home page header in 2026.9+? 
-This restores it — whether you prefer to customise or customize your setup.
-**Features:**
-- Rename "Overview" to "Home" 
-- Add configurable icon shortcuts (cameras, smart plugs, etc.)
-- Works with HA 2026.9+ (tested on 2026.9.2–2026.9.4)
-- No integrations, custom cards, or YAML configuration required
-- Scoped only to the home dashboard — other dashboards unaffected
-
 ![Home Assistant Home Dashboard with custom header and shortcut icons](screenshot-home-dashboard.png)
 
-**Not an official Home Assistant feature.** This is a small user script that
-relies on internal, undocumented Home Assistant frontend DOM and shadow-root
-structure. It is not a supported Home Assistant extension API and may need
-updating after a Home Assistant frontend update – see
+# Home Assistant Home Dashboard Header Customiser
+
+Home Assistant 2026.2+ auto-generates the built-in Home dashboard with a fixed
+"Overview" title and very limited customisation/customization options. This
+module restores control of the header by renaming it to "Home" and adding
+inline shortcut buttons for your most-used dashboards.
+
+**What it does:**
+- Renames the built-in Home dashboard title from "Overview" to "Home" 
+- Adds shortcut buttons directly beside the title for fast navigation
+- Limits the change to the Home dashboard only
+- Works without integrations, custom cards, or dashboard YAML changes
+
+**Why it exists:**
+The built-in Home dashboard is auto-generated and has no header
+customisation/customization. This module provides a small but useful workaround
+for users who want a cleaner, more functional landing page.
+
+**Not an official Home Assistant feature.**
+This project uses internal Home Assistant frontend DOM and shadow-root
+structures. It is not a supported Home Assistant API and may require updates
+after frontend changes – see
 [Upgrade risk and architectural trade-offs](#upgrade-risk-and-architectural-trade-offs).
 
 Home Assistant is a trademark of the Home Assistant project; this project is
@@ -31,7 +30,7 @@ not affiliated with or endorsed by it.
 **Status: Working beta – unversioned**
 
 This module is working on the author's Home Assistant installation and has
-been tested against the version stated below. It is not yet formally
+been tested against the versions stated below. It is not yet formally
 versioned, and relies on internal Home Assistant frontend implementation
 details which may change without notice. Versioning may or may not happen in
 the future, depending on whether I decide to version it, or whether I or a
@@ -153,6 +152,32 @@ The name must exist in MDI or the icon renders blank – verify a name in the
 Home Assistant icon picker or on the MDI site. Any MDI icon name supported by
 Home Assistant's `ha-icon` component should work here, as the buttons use the
 same component for icon rendering.
+
+## Localisation
+
+The module displays "Home" as the dashboard title. To change this to another
+language, edit line 149 in `home-dashboard-header.js`:
+
+Doublecheck that line 149 reads:
+```js
+'.main-title::before{content:"Home";font-size:1.5rem;display:inline-block;line-height:1;vertical-align:middle}'
+```
+
+Replace "Home" with your chosen language. Examples:
+|Language|Change to|
+|-|-|
+|German|"Startseite"|
+|French|"Accueil"|
+|Spanish|"Inicio"|
+|Italian|"Home"|
+|Dutch|"Thuis"|
+|Swedish|"Hem"|
+|Portuguese|"Início"|
+|Danish|"Hjem"|
+|Norwegian|"Hjem"|
+|Polish|"Dom"|
+
+After editing, hard-refresh the browser (Ctrl+F5 / Ctrl+Shift+R) – no restart needed.
 
 ## How navigation works
 
