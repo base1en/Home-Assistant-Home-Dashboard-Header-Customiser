@@ -1,5 +1,5 @@
 /*
- * home-dashboard-header.js
+ * overview-title.js
  *
  * https://github.com/base1en/Home-Assistant-Home-Dashboard-Header-Customiser
  *
