@@ -1,33 +1,21 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Home Assistant](https://img.shields.io/badge/Home%20Assistant-2026.9%20%2B-blue.svg)](https://www.home-assistant.io/)
+
 ![Home Assistant Home Dashboard with custom header and shortcut icons](screenshot-home-dashboard.png)
 
 # Home Assistant Home Dashboard Header Customiser
 
-Home Assistant 2026.2+ auto-generates the built-in Home dashboard with a fixed
-"Overview" title and very limited customisation/customization options. This
-module restores control of the header by renaming it to "Home" and adding
-inline shortcut buttons for your most-used dashboards.
-
-**What it does:**
-- Renames the built-in Home dashboard title from "Overview" to "Home" 
-- Adds shortcut buttons directly beside the title for fast navigation
-- Limits the change to the Home dashboard only
-- Works without integrations, custom cards, or dashboard YAML changes
+Want a **Home Assistant custom header** with **shortcut buttons** to **rename the Overview dashboard**? Home Assistant 2026.2+ auto-generates the built-in Home dashboard with a fixed "Overview" title and very limited customisation/customization options. This module restores control of the header by renaming it to "Home" and adding inline shortcut buttons for your most-used dashboards.
 
 **Why it exists:**
-The built-in Home dashboard is auto-generated and has no header
-customisation/customization. This module provides a small but useful workaround
-for users who want a cleaner, more functional landing page.
+The built-in default landing page dashboard is auto-generated and has no header customisation/customization. This module provides a small but useful workaround for users who want a cleaner, more functional landing page.
 
 **Not an official Home Assistant feature.**
-This project uses internal Home Assistant frontend DOM and shadow-root
-structures. It is not a supported Home Assistant API and may require updates
-after frontend changes – see
+This project uses internal Home Assistant frontend DOM and shadow-root structures. It is not a supported Home Assistant API and may require updates after frontend changes – see
 [Upgrade risk and architectural trade-offs](#upgrade-risk-and-architectural-trade-offs).
 
 Home Assistant is a trademark of the Home Assistant project; this project is
 not affiliated with or endorsed by it.
-
-**Status: Working beta – unversioned**
 
 This module is working on the author's Home Assistant installation and has
 been tested against the versions stated below. It is not yet formally
