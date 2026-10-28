@@ -33,6 +33,6 @@ Initial standalone release of the working JS module.
 
 ### Tested
 
-- Home Assistant Core 2026.9.2>2026.10.0, Frontend 20260826.7. 
+- Home Assistant Operating System 18.3 → 18.4, Core 2026.9.2 → 2026.10.4, Frontend 20260826.7 → 20260930.5 
 - Not guaranteed to survive future Home Assistant frontend restructuring —
   see README, "Upgrade risk and architectural trade-offs".
