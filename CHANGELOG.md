@@ -1,12 +1,23 @@
 # Changelog
-## [beta] - 2026-10-08
+
+### Tested
+
+- Home Assistant Operating System 18.3 → 18.4, Core 2026.9.2 → 2026.10.4, Frontend 20260826.7 → 20260930.5 
+- Not guaranteed to survive future Home Assistant frontend restructuring —
+  see README, "Upgrade risk and architectural trade-offs".
+  
+## 2026-10-28
+
+- update tested against version numbers of HA OS, Core and Frontend
+
+## 2026-10-08
 
  - rename home-dashboard-header.js → overview_title.js
  - update README installation example
  - update README localisation reference
  - update source/header references if necessary
  - update any other documentation mentioning the old filename
-
+ 
 ## [beta] - 2026-09-19
 
 Initial standalone release of the working JS module.
@@ -31,8 +42,4 @@ Initial standalone release of the working JS module.
 - `console.debug` diagnostics for fast failure triage.
 - Licensed under MIT.
 
-### Tested
 
-- Home Assistant Operating System 18.3 → 18.4, Core 2026.9.2 → 2026.10.4, Frontend 20260826.7 → 20260930.5 
-- Not guaranteed to survive future Home Assistant frontend restructuring —
-  see README, "Upgrade risk and architectural trade-offs".
