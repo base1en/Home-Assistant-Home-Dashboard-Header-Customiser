@@ -301,7 +301,7 @@ affiliated with, or endorsed by Home Assistant.
 ## Works on my installation
 
 This module works on the author's Home Assistant installation and is tested
-against the version stated above. There is no guarantee it will work on other
+against the versions stated above. There is no guarantee it will work on other
 installations or future Home Assistant releases. If it doesn't quite fit your
 setup, feel free to modify and adapt it under the terms of the MIT licence.
 
