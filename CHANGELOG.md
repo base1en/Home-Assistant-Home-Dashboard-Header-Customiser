@@ -12,7 +12,7 @@
 
 ## 2026-10-08
 
- - rename home-dashboard-header.js → overview_title.js
+ - rename home-dashboard-header.js → overview-title.js
  - update README installation example
  - update README localisation reference
  - update source/header references if necessary
