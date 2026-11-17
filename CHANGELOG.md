@@ -2,7 +2,7 @@
 
 ### Tested
 
-- Home Assistant Operating System 18.3 → 18.4, Core 2026.9.2 → 2026.10.4, Frontend 20260826.7 → 20260930.5 
+- Home Assistant Operating System 18.3 → 18.4, Core 2026.9.2 → 2026.11.2, Frontend 20260826.7 → 20261028.6
 - Not guaranteed to survive future Home Assistant frontend restructuring —
   see README, "Upgrade risk and architectural trade-offs".
   
