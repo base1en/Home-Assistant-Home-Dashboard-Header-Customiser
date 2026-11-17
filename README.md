@@ -26,7 +26,7 @@ future update from HA breaks it.
 
 ## Tested on
 
-* Home Assistant Operating System 18.3 → 18.4, Core 2026.9.2 → 2026.10.4, Frontend 20260826.7 → 20260930.5 
+* Home Assistant Operating System 18.3 → 18.4, Core 2026.9.2 → 2026.11.24, Frontend 20260826.7 → 20261028.6 
 * Because it targets internal frontend structure it is version-sensitive; see
 [Upgrade risk](#upgrade-risk-and-architectural-trade-offs).
 
